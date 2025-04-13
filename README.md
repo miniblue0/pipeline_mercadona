@@ -50,7 +50,7 @@ pipeline_mercadona/
    docker exec -it airflow-webserver-1 airflow db init
   ```
 4. Acceder a la interfaz web de Airflow:
-   http://localhost:8080
+   http://localhost:8081
     Usuario: admin
     Contraseña: admin
 
