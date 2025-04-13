@@ -1,11 +1,11 @@
-# Proyecto de ETL con Apache Airflow y PostgreSQL - Pipeline Mercadona
-
-Este proyecto simula un pipeline de datos on-premise para una cadena de supermercados (Mercadona), usando **Apache Airflow** para orquestación de tareas y **PostgreSQL** como base de datos. Se procesan archivos CSV de inventario y ventas, se transforman los datos y se generan reportes consolidados.
+# Implementación de un Pipeline para la Gestión de Datos en Mercadona
+Mercadona, líder en el sector de supermercados en España, desea mejorar la integración y el procesamiento de los datos generados en sus almacenes y puntos de venta. La compañía enfrenta el desafío de consolidar grandes volúmenes de datos provenientes de sus almacenes regionales en un Data Warehouse (DW) centralizado, para habilitar análisis avanzados y tomar decisiones basadas en datos.
+Para ello, se ha elegido una solución on-premise que permita el procesamiento de datos de inventarios y ventas. Se debe desarrollar un pipeline capaz de ingerir estos datos desde archivos CSV hacia una base de datos PostgreSQL, alojada en el Data Warehouse.
 
 ---
 
 ## Estructura del Proyecto
-
+```
 pipeline_mercadona/
 ├── README.md 
 ├── docker-compose.yaml
@@ -16,7 +16,7 @@ pipeline_mercadona/
 ├── imagenes/
 | ├── airflow_ui.png 
 │ ├── dbeaver.png
-
+```
 ---
 
 ## Tecnologías Utilizadas
