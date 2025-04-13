@@ -13,6 +13,9 @@ pipeline_mercadona/
 | ├── dag_inventario.py
 | ├── dag_ventas.py
 | └── dag_reporte.py
+├── data/
+| ├── inventario.csv
+| ├── ventas.csv
 ├── imagenes/
 | ├── airflow_ui.png 
 │ ├── dbeaver.png
