@@ -21,7 +21,7 @@ pipeline_mercadona/
 │ ├── reporte_stock.png
 │ ├── ventas.png
 ├── README.md 
-├── docker-compose.yaml
+├── docker-compose.yml
 ```
 ---
 
