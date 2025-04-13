@@ -41,7 +41,7 @@ pipeline_mercadona/
    ```bash
    git clone https://github.com/tuusuario/airflow_mercadona.git
    cd airflow_mercadona
-    ```
+   ```
 2. Levantar los contenedores con docker-compose:
   ```bash
    sudo docker-compose up -d
