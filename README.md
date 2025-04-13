@@ -8,8 +8,6 @@ Para ello, se ha elegido una solución on-premise que permita el procesamiento d
 ## Estructura del Proyecto
 ```
 pipeline_mercadona/
-├── README.md 
-├── docker-compose.yaml
 ├── dags/
 | ├── dag_inventario.py
 | ├── dag_ventas.py
@@ -22,6 +20,8 @@ pipeline_mercadona/
 │ ├── inventario.png
 │ ├── reporte_stock.png
 │ ├── ventas.png
+├── README.md 
+├── docker-compose.yaml
 ```
 ---
 
