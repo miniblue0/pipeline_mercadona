@@ -26,7 +26,7 @@ pipeline_mercadona/
 ---
 
 ## Tecnologías Utilizadas
-
+- Linux
 - Apache Airflow
 - PostgreSQL
 - Docker y Docker Compose
@@ -46,13 +46,7 @@ pipeline_mercadona/
   ```bash
    sudo docker-compose up -d
   ```
-3. Inicializar la base de datos (solo se hace 1 vez):
-  ```bash
-   docker exec -it airflow-webserver-1 airflow db init
-   docker exec -it airflow-webserver-1 airflow users create --username admin --firstname Admin  --lastname Airflow --role Admin --email admin@example.com --password admin
-
-  ```
-4. Acceder a la interfaz web de Airflow:
+3. Acceder a la interfaz web de Airflow:
    http://localhost:8081
     Usuario: admin
     Contraseña: admin
