@@ -18,7 +18,9 @@ pipeline_mercadona/
 | ├── ventas.csv
 ├── imagenes/
 | ├── airflow_ui.png 
-│ ├── dbeaver.png
+│ ├── inventario.png
+│ ├── reporte_stock.png
+│ ├── ventas.png
 ```
 ---
 
