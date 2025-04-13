@@ -1,7 +1,22 @@
 # Implementación de un Pipeline para la Gestión de Datos en Mercadona
 
-Mercadona, líder en el sector de supermercados en España, desea mejorar la integración y el procesamiento de los datos generados en sus almacenes y puntos de venta. La compañía enfrenta el desafío de consolidar grandes volúmenes de datos provenientes de sus almacenes regionales en un Data Warehouse (DW) centralizado, para habilitar análisis avanzados y tomar decisiones basadas en datos.
-Para ello, se ha elegido una solución on-premise que permita el procesamiento de datos de inventarios y ventas. Se debe desarrollar un pipeline capaz de ingerir estos datos desde archivos CSV hacia una base de datos PostgreSQL, alojada en el Data Warehouse.
+## Flujo ETL
+Este proyecto implementa un flujo ETL (Extracción, Transformación y Carga) automatizado utilizando Apache Airflow, contenedores Docker y una base de datos PostgreSQL.
+
+El proceso consiste en:
+    Extracción:
+    Los datos de inventario y ventas se obtienen a partir de archivos CSV locales ubicados en la carpeta /opt/airflow/data.
+    Transformación (Transform):
+    A través de DAGs de Airflow, los datos son procesados usando pandas:
+        Se limpian y normalizan.
+        Se verifica la consistencia entre productos.
+        Se calcula el stock actualizado combinando inventario y ventas.
+    Carga:
+    Los datos transformados se cargan en tablas PostgreSQL:
+        inventario
+        ventas
+        reporte_stock (resultado final del flujo, con stock actualizado por producto y almacén)
+Este flujo corre de forma orquestada mediante Airflow y puede ser monitoreado desde su interfaz web.
 
 ---
 
