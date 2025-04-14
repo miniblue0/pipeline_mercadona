@@ -16,7 +16,7 @@ Los datos transformados se cargan en tablas PostgreSQL:
 - ventas
 - reporte_stock (resultado final del flujo, con stock actualizado por producto y almacén)
 
-*(Actualmente los DAGs estan programados para ejecución manual desde la interfaz de Airflow, para que esten completamente automatizados hay que agregarles el schedule_interval en cada DAG :) .)*
+*(Actualmente los DAGs estan programados para ejecución manual desde la interfaz de Airflow, para que esten completamente automatizados hay que agregarles el schedule_interval en cada DAG :)*
 
 ---
 
