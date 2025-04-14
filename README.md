@@ -8,14 +8,14 @@ Este proyecto implementa un flujo ETL (Extracción, Transformación y Carga) aut
 Los datos de inventario y ventas se obtienen a partir de archivos CSV locales ubicados en la carpeta /opt/airflow/data.
 ### Transformación:
 A través de DAGs de Airflow, los datos son procesados usando pandas:
-        · Se limpian y normalizan.
-        · Se verifica la consistencia entre productos.
-        · Se calcula el stock actualizado combinando inventario y ventas.
+- Se limpian y normalizan.
+- Se verifica la consistencia entre productos.
+- Se calcula el stock actualizado combinando inventario y ventas.
 ### Carga:
 Los datos transformados se cargan en tablas PostgreSQL:
-        · inventario
-        · ventas
-        · reporte_stock (resultado final del flujo, con stock actualizado por producto y almacén)
+- inventario
+- ventas
+- reporte_stock (resultado final del flujo, con stock actualizado por producto y almacén)
 
 *(Actualmente los DAGs estan programados para ejecución manual desde la interfaz de Airflow, para que esten completamente automatizados hay que agregarles el schedule_interval en cada DAG :) .)*
 
