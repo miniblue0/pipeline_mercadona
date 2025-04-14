@@ -17,6 +17,7 @@ El proceso consiste en:
         ventas
         reporte_stock (resultado final del flujo, con stock actualizado por producto y almacén)
 Este flujo corre de forma orquestada mediante Airflow y puede ser monitoreado desde su interfaz web.
+*(Actualmente los DAGs estan programados para ejecución manual desde la interfaz de Airflow, para que esten completamente automatizados hay que agregarles el schedule_interval en cada DAG :) .)*
 
 ---
 
