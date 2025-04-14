@@ -68,13 +68,13 @@ pipeline_mercadona/
     Contraseña: admin
 
 ## Funcionamiento de los DAGs
-· dag_inventario.py
+- dag_inventario.py
   Carga los datos del archivo inventario.csv a la tabla inventario.
 
-· dag_ventas.py
+- dag_ventas.py
   Carga los datos del archivo ventas.csv a la tabla ventas.
 
-· dag_reporte.py
+- dag_reporte.py
   Genera la tabla reporte_stock combinando inventario y ventas para calcular el stock final.
 ## Esquema de la Base de Datos
 ```sql
