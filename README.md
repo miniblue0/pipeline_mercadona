@@ -47,7 +47,7 @@ pipeline_mercadona/
 - PostgreSQL
 - Docker y Docker Compose
 - Python 3
-- DBeaver (opcional, para visualización de datos)
+- DBeaver (para visualizacion de datos)
 
 ---
 
