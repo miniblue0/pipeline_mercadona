@@ -3,20 +3,19 @@
 ## Flujo ETL
 Este proyecto implementa un flujo ETL (Extracción, Transformación y Carga) automatizado utilizando Apache Airflow, contenedores Docker y una base de datos PostgreSQL.
 
-El proceso consiste en:
-    1. Extracción:
-    Los datos de inventario y ventas se obtienen a partir de archivos CSV locales ubicados en la carpeta /opt/airflow/data.
-    2. Transformación:
-    A través de DAGs de Airflow, los datos son procesados usando pandas:
+## El proceso consiste en:
+### Extracción:
+Los datos de inventario y ventas se obtienen a partir de archivos CSV locales ubicados en la carpeta /opt/airflow/data.
+### Transformación:
+A través de DAGs de Airflow, los datos son procesados usando pandas:
         -Se limpian y normalizan.
         -Se verifica la consistencia entre productos.
         -Se calcula el stock actualizado combinando inventario y ventas.
-    3. Carga:
-    Los datos transformados se cargan en tablas PostgreSQL:
+### Carga:
+Los datos transformados se cargan en tablas PostgreSQL:
         -inventario
         -ventas
         -reporte_stock (resultado final del flujo, con stock actualizado por producto y almacén)
-Este flujo corre de forma orquestada mediante Airflow y puede ser monitoreado desde su interfaz web.
 
 *(Actualmente los DAGs estan programados para ejecución manual desde la interfaz de Airflow, para que esten completamente automatizados hay que agregarles el schedule_interval en cada DAG :) .)*
 
